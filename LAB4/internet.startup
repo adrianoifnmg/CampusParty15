@@ -1,0 +1,7 @@
+ifconfig eth0 50.0.0.2/30
+ifconfig eth1 8.8.8.1/24
+ifconfig eth2 104.22.19.1/24
+route add default gw 50.0.0.1
+#iptables -A FORWARD -s 10.0.0.0/8 -j DROP
+#iptables -A FORWARD -s 172.16.0.0/12 -j DROP
+#iptables -A FORWARD -s 192.168.0.0/16 -j DROP
